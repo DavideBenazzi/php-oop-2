@@ -25,6 +25,7 @@
             <h4>Pages : <?php echo $manual->pages ?></h4>
             <h4>Author : <?php echo $manual->author ?></h4>
             <h4>Price : <?php echo $manual->price ?></h4>
+            <h5>Fake ISBN : <?php echo $manual->isbn ?></h5>
         </section>
         <h2>Classics</h2>
         <section>
@@ -35,6 +36,7 @@
             <h4>Pages : <?php echo $classic->pages ?></h4>
             <h4>Author : <?php echo $classic->author ?></h4>
             <h4>Year of publication : <?php echo $classic->year ?></h4>
+            <h5>Fake ISBN : <?php echo $classic->isbn ?></h5>
         </section>
         <h2>Best Sellers</h2>
         <section>
@@ -45,6 +47,7 @@
             <h4>Pages : <?php echo $bestSeller->pages ?></h4>
             <h4>Author : <?php echo $bestSeller->author ?></h4>
             <h4>Rating : <?php echo $bestSeller->rating ?></h4>
+            <h5>Fake ISBN : <?php echo $bestSeller->isbn ?></h5>
         </section>
     </main>
     
