@@ -19,5 +19,5 @@
             //FAKEISBN ---> TRAIT
             $this->isbn = $this->fakeIsbn($title , $pages , $author);
         }
-    }
+    };
 ?>
