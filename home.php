@@ -16,26 +16,35 @@
     <h1>BOOK STORE</h1>
 
     <main>
-        <h2>Manual</h2>
+        <h2>Manuals</h2>
         <section>
             <?php 
                 $manual = new Manual('PHP for dummies' , 390 , 'Janet Valade' , 10 );
-                var_dump($manual);
             ?>
+            <h4>Title : <?php echo $manual->title ?></h4>
+            <h4>Pages : <?php echo $manual->pages ?></h4>
+            <h4>Author : <?php echo $manual->author ?></h4>
+            <h4>Price : <?php echo $manual->price ?></h4>
         </section>
-        <h2>Classic</h2>
+        <h2>Classics</h2>
         <section>
             <?php
                 $classic = new Classic('Frankenstein' , 280 , 'Mary Shelley' , 1823 );
-                var_dump($classic);
             ?>
+            <h4>Title : <?php echo $classic->title ?></h4>
+            <h4>Pages : <?php echo $classic->pages ?></h4>
+            <h4>Author : <?php echo $classic->author ?></h4>
+            <h4>Year of publication : <?php echo $classic->year ?></h4>
         </section>
-        <h2>Best Seller</h2>
+        <h2>Best Sellers</h2>
         <section>
             <?php
                 $bestSeller = new BestSeller('Se scorre il sangue' , 512 , 'Stephen King' , '4,5');
-                var_dump($bestSeller);
             ?>
+            <h4>Title : <?php echo $bestSeller->title ?></h4>
+            <h4>Pages : <?php echo $bestSeller->pages ?></h4>
+            <h4>Author : <?php echo $bestSeller->author ?></h4>
+            <h4>Rating : <?php echo $bestSeller->rating ?></h4>
         </section>
     </main>
     
