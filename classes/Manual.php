@@ -4,19 +4,14 @@
 
     //EXTEND FATHER CLASS
     class Manual extends BookItem {
-        public $pages;
+        public $price;
 
         //CONSTRUCTOR
-        public function __construct($title , $price , $author , $pages){
+        public function __construct($title , $pages , $author , $price){
             //SET VALUES IN FATHER CLASS
-            parent::__construct($title , $price , $author);    
+            parent::__construct($title , $pages , $author);    
             //SET VALUE IN CHILD CLASS
-            $this->pages = $pages;       
+            $this->price = $price;       
         }
-
-        //METHODS
-
     }
-
-
 ?>

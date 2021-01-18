@@ -1,5 +1,7 @@
 <?php
-    include_once __DIR__ . '/classes/Manual.php'
+    include_once __DIR__ . '/classes/Manual.php';
+    include_once __DIR__ . '/classes/Classic.php';
+    include_once __DIR__ . '/classes/BestSeller.php';
 ?>
 
 <!DOCTYPE html>
@@ -17,20 +19,22 @@
         <h2>Manual</h2>
         <section>
             <?php 
-                $manual = new Manual('PHP for dummies' , '50' , 'Luca Rossi' , 200 );
+                $manual = new Manual('PHP for dummies' , 390 , 'Janet Valade' , 10 );
                 var_dump($manual);
             ?>
         </section>
         <h2>Classic</h2>
         <section>
             <?php
-            
+                $classic = new Classic('Frankenstein' , 280 , 'Mary Shelley' , 1823 );
+                var_dump($classic);
             ?>
         </section>
         <h2>Best Seller</h2>
         <section>
             <?php
-            
+                $bestSeller = new BestSeller('Se scorre il sangue' , 512 , 'Stephen King' , '4,5');
+                var_dump($bestSeller);
             ?>
         </section>
     </main>

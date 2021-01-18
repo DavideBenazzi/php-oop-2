@@ -3,18 +3,14 @@
     class BookItem {
         //PROPERTIES
         public $title;
-        public $price;
+        public $pages;
         public $author;
 
         //CONSTRUCTOR
-        public function __construct($title , $price , $author) {
+        public function __construct($title , $pages , $author) {
             $this->title = $title;
-            $this->price = $price;
+            $this->pages = $pages;
             $this->author = $author;
         }
-        //METHODS
-
     }
-
-
 ?>
